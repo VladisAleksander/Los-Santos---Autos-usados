@@ -9,24 +9,27 @@ namespace Los_Santos___Autos_usados
 {
     internal class Conexion
     {
+        // Inicia la conexión a la Base de Datos.
         public static MySqlConnection conexion()
         {
+            // Datos de acceso.
             string servidor = "localhost";
             string bd = "los_santos";
             string usuario = "root";
             string password = "Password123";
 
+            // Se envían los datos de conexión para su verificación.
             string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
 
             try
             {
-                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+                MySqlConnection conexionBD = new MySqlConnection(cadenaConexion); // Se solicita la conexión.
 
-                return conexionBD;
+                return conexionBD; // Conexión exitosa.
             }
-            catch (MySqlException ex)
+            catch (MySqlException ex) // Informa si existe algún error en la conexión.
             {
-                Console.WriteLine("Error: " + ex.Message);
+                Console.WriteLine("Error: " + ex.Message); // Mensaje de consola en caso de error en la conexión.
                 return null;
             }
         }

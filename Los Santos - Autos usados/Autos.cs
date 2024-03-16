@@ -8,6 +8,7 @@ namespace Los_Santos___Autos_usados
 {
     internal class Autos
     {
+        // Se declara el tipo de dato permitido en cada campo del formulario.
         private int id;
         private string codigo;
         private string marca;
@@ -18,6 +19,7 @@ namespace Los_Santos___Autos_usados
         private int existencias;
         private double precio;
 
+        // Se declaran los datos de los campos del formulario para la conexión a la Base de Datos.
         public int Id { get => id; set => id = value; }
         public string Codigo { get => codigo; set => codigo = value; }
         public string Marca { get => marca; set => marca = value; }
