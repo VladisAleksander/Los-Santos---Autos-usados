@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
@@ -55,8 +56,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnBuscarTabla = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.txtCampo = new System.Windows.Forms.TextBox();
-            this.lblBuscar = new System.Windows.Forms.Label();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codigoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.marcaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +66,8 @@
             this.existenciasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.autosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.txtCampo = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -345,22 +346,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(797, 314);
             this.dataGridView1.TabIndex = 19;
             // 
-            // txtCampo
-            // 
-            this.txtCampo.Location = new System.Drawing.Point(77, 47);
-            this.txtCampo.Name = "txtCampo";
-            this.txtCampo.Size = new System.Drawing.Size(428, 27);
-            this.txtCampo.TabIndex = 1;
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(6, 50);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(65, 21);
-            this.lblBuscar.TabIndex = 0;
-            this.lblBuscar.Text = "Buscar:";
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -446,6 +431,22 @@
             // 
             this.autosBindingSource.DataSource = typeof(Los_Santos___Autos_usados.Autos);
             // 
+            // txtCampo
+            // 
+            this.txtCampo.Location = new System.Drawing.Point(77, 47);
+            this.txtCampo.Name = "txtCampo";
+            this.txtCampo.Size = new System.Drawing.Size(428, 27);
+            this.txtCampo.TabIndex = 1;
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.Location = new System.Drawing.Point(6, 50);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(65, 21);
+            this.lblBuscar.TabIndex = 0;
+            this.lblBuscar.Text = "Buscar:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -453,6 +454,7 @@
             this.ClientSize = new System.Drawing.Size(1184, 432);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Los Santos - Autos Usados";
             this.groupBox1.ResumeLayout(false);

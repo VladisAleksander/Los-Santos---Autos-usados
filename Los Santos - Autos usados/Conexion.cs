@@ -13,10 +13,10 @@ namespace Los_Santos___Autos_usados
         public static MySqlConnection conexion()
         {
             // Datos de acceso.
-            string servidor = "localhost";
-            string bd = "los_santos";
-            string usuario = "root";
-            string password = "Password123";
+            string servidor = "mx66.hostgator.mx";
+            string bd = "elprofea_LosSantos";
+            string usuario = "elprofea_Pruebas";
+            string password = "Contraseña";
 
             // Se envían los datos de conexión para su verificación.
             string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
